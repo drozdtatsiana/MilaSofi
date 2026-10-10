@@ -1,0 +1,50 @@
+$bg-color: #E9E1D7;
+$text-accent: #3B2317;
+$text-muted: #94897C;
+$color-text-on-dark: #FFF;
+$bg-btn: #3B2317;
+
+ @keyframes pulse-wave {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+
+  } 
+
+%loraMedium-500 {
+    font-family: 'Lora-Medium', serif;
+    font-weight: 500;
+}
+
+%openSans-300 {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-weight: 300;
+}
+
+%openSans-400 {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%openSans-500 {
+    font-family: 'OpenSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%openSans-700 {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%heading {
+  @extend %loraMedium-500;
+    font-size: 40px;
+    color: $text-accent;
+    margin-bottom: 25px;
+}
