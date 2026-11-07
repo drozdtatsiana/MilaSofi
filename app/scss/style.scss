@@ -12,7 +12,7 @@ html {
 
 body {
   @extend %openSans-400;
-  color: vars.$text-muted;
+  color: vars.$text-body;
   font-size: 20px;
   line-height: 1.3;
 
@@ -68,6 +68,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   padding: 20px 0;
   color: vars.$text-accent;
   font-size: 18px;
@@ -276,8 +277,10 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
 
-    &:hover {
-      transform: scale(1.1);
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -300,6 +303,7 @@ body {
     width: 100%;
     padding: 12px;
     background-color: vars.$bg-btn;
+    color: vars.$color-text-on-dark;
   }
 }
 
@@ -497,9 +501,6 @@ body {
     border-bottom: 1px solid vars.$text-muted;
   }
 
-  &__menu-link {
-    border-bottom: 1px solid vars.$text-muted;
-  }
 
   &__elements {
     display: flex;
@@ -509,7 +510,7 @@ body {
 
   &__element-title {
     margin-bottom: 20px;
-    color: vars.$text-muted;
+    color: vars.$text-accent;
   }
 
   &__element-list {
@@ -631,4 +632,9 @@ body {
   &[aria-hidden="false"] {
     display: flex;
   }
+}
+
+:focus-visible {
+  outline: 2px solid vars.$text-accent;
+  outline-offset: 3px;
 }

@@ -34,12 +34,6 @@
 }
 
 @media (max-width: 730px) {
-    .services {
-        &__grid {
-            grid-template-columns: repeat(2, minmax(0, 340px));
-        }
-    }
-
     .footer {
         &__elements {
             justify-content: flex-start;
