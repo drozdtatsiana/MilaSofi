@@ -4,7 +4,7 @@
 
 🔗 **[Открыть сайт](https://drozdtatsiana.github.io/MilaSofi/)**
 
-![Скриншот сайта MilaSofi](main.png)
+![Скриншот сайта MilaSofi](screenshot.png)
 
 ## О проекте
 
